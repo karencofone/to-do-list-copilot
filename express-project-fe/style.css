@@ -1,0 +1,156 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+#pending-ttasks-container,
+#completed-tasks-container {
+  margin-top: 2rem;
+}
+
+.task {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+}
+
+.task.completed {
+  background-color: #e6f7e6;
+  border-color: #b3e6b3;
+}
+
+.task h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.task p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.task .actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.task button:first-child {
+  background-color: #4caf50;
+}
+
+.task button:first-child:hover {
+  background-color: #3e8e41;
+}
+
+.task button:nth-child(2) {
+  background-color: #ff9800;
+}
+
+.task button:nth-child(2):hover {
+  background-color: #e68900;
+}
+
+.task button:last-child {
+  background-color: #f44336;
+}
+
+.task button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .task {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi Lista de Tareas</h1>
+    </header>
+    <main>
+      <section id="task-form-section">
+        <form id="task-form">
+          <input type="text" id="task-title" placeholder="Título" required />
+          <textarea id="task-description" placeholder="Descripción"></textarea>
+          <input type="date" id="task-dueDate" />
+          <select id="task-priority" required>
+            <option value="" disabled selected>Prioridad</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <button type="submit">Agregar Tarea</button>
+        </form>
+      </section>
+      <section id="tasks-section">
+        <h2>Tareas Pendientes</h2>
+        <div id="pending-tasks-container"></div>
+        <h2>Tareas Completadas</h2>
+        <div id="completed-tasks-container"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
