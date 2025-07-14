@@ -87,47 +87,7 @@ Los endpoints de la API RESTful deben ser los siguientes:
 
 **3) Desarrollo del Frontend con GitHub Copilot**
 
-- Manteniendo el contexto en el mismo chat de Copilot, solicité la creación del frontend basándome en un prompt detallado, también formulado con la ayuda de Gemini (resaltando que Gemini ayudó en la interpretación de la consigna para los prompts, no en la generación directa de código). El prompt para el frontend fue:
-
-  FRONTEND (HTML, CSS, JavaScript puro)
-
-  - Crea los archivos 'index.html', 'style.css' y 'script.js' en la carpeta "express-project-fe" para la interfaz de usuario.
-  - La interfaz debe ser simple, intuitiva y funcional.
-
-  1. index.html:
-     Estructura HTML básica con un header (título "Mi Lista de Tareas") y un main.
-     Un formulario (id="task-form") para añadir nuevas tareas con campos para:
-     Título (<input type="text" id="task-title" required>)
-     Descripción (<textarea id="task-description">)
-     Fecha de Vencimiento (<input type="date" id="task-dueDate">)
-     Prioridad (<select id="task-priority" required>) con opciones "Low", "Medium", "High".
-     Un botón "Agregar Tarea".
-     Dos secciones (<div id="pending-tasks-container"> y <div id="completed-tasks-container">) para mostrar las listas de tareas pendientes y completadas, respectivamente.
-     Cada tarea mostrada debe incluir: título, descripción (si existe), fecha de vencimiento (si existe), prioridad y estado.
-     Cada tarea debe tener botones para:
-     "Editar" (para modificar sus detalles).
-     Marcar como Completada" / "Marcar como Pendiente" (para cambiar su estado).
-     "Eliminar" (para borrar la tarea).
-     Enlaza style.css y script.js.
-
-  2. style.css:
-     Estilos CSS básicos para una apariencia limpia y funcional.
-     Estilos para el formulario, los botones y los ítems de la lista de tareas.
-     Diferencia visualmente las tareas "Pending" de las "Completed".
-     Incluye media queries para una mínima responsividad en diferentes tamaños de pantalla.
-
-  3. script.js:
-     Interactúa con el backend en http://localhost:3000/tasks usando fetch API.
-     fetchTasks(): Función asíncrona para obtener todas las tareas del backend y renderizarlas dinámicamente en las secciones correspondientes (pending-tasks-container, completed-tasks-container). Debe borrar el contenido anterior antes de renderizar.
-     renderTask(task): Función que crea y devuelve el elemento HTML para una tarea individual, incluyendo sus datos y botones de acción.
-     addTask(event): Maneja el evento de submit del formulario. Obtiene los datos, realiza la petición POST al backend, y actualiza la lista de tareas.
-     toggleTaskStatus(id, currentStatus): Función para cambiar el status de una tarea (de "Pending" a "Completed" o viceversa) mediante una petición PUT.
-     editTask(id): Función para permitir la edición de una tarea (puedes usar prompt() para simplicidad o un modal básico) y enviar los cambios con PUT.
-     deleteTask(id): Función para eliminar una tarea mediante una petición DELETE.
-
-  - Manejo de Eventos: Asigna los event listeners necesarios (ej. para el submit del formulario, para los clics en los botones de las tareas).
-  - Inicialización: Llama a fetchTasks() cuando el DOM esté completamente cargado.
-  - Asegúrate de manejar los errores de las peticiones HTTP y de proporcionar una buena experiencia de usuario.
+- Manteniendo el contexto en el mismo chat de Copilot, solicité la creación del frontend basándome en un prompt detallado, también formulado con la ayuda de Gemini (resaltando que Gemini ayudó en la interpretación de la consigna para los prompts, no en la generación directa de código).
 
 - **Experiencia con Copilot en el Frontend**
 - Generación Estructural y Lógica: Copilot generó la estructura HTML, los estilos CSS básicos y la lógica JavaScript para interactuar con el backend de manera efectiva. Esto incluyó la implementación de las funciones para añadir, ver, editar, marcar y eliminar tareas. En un prompt posterior, le solicité que modifique el método que edita las tareas para poder editar también la descripción de las mismas.
