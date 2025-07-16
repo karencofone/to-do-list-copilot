@@ -93,3 +93,10 @@ Los endpoints de la API RESTful deben ser los siguientes:
 - Generación Estructural y Lógica: Copilot generó la estructura HTML, los estilos CSS básicos y la lógica JavaScript para interactuar con el backend de manera efectiva. Esto incluyó la implementación de las funciones para añadir, ver, editar, marcar y eliminar tareas. En un prompt posterior, le solicité que modifique el método que edita las tareas para poder editar también la descripción de las mismas.
 
 - Refinamiento Estético Iterativo: Inicialmente, el estilo predeterminado sugerido no se alineaba completamente con la visión de una UI moderna. Sin embargo, al proporcionarle a Copilot especificaciones más detalladas (como "UI más moderna y accesible, con inputs redondeados, colores modernos y diferenciables"), pude iterar rápidamente en el diseño hasta obtener el resultado final que está integrado en el proyecto.
+
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/817f070c-5b85-450d-8e59-e2042f4d6926" />
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/e7443f48-0979-40b4-b8a4-88f75c58cbd4" />
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/c6b7beac-9ecb-459f-86f1-3c9a431cce88" />
+
+
+
